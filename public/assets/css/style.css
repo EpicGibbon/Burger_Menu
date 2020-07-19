@@ -17,3 +17,23 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
+
+
+
+  .centercontent {
+    text-align: center;
+  }
+
+  .left-content {
+    display: inline-block;
+  }
+
+  .right-content {
+    margin-right: auto;
+    float: right;
+  }
+  .centerimage {
+    display: inline;
+  }
+
+  
