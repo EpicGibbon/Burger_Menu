@@ -19,27 +19,34 @@
     </form>
 </div>
 
-<div class="left-content">
-    <h2>Burgers that are still needing to be devoured!!</h2>
+<div class="row">
+    <div class="column">
+        <h2>Burgers that are still needing to be devoured!!</h2>
 
-    <ul class="green">
-        {{#each burgers}}
-        {{#unless devour}}
-        {{> burgers/burger-block devour=true}}
-        {{/unless}}
-        {{/each}}
-    </ul>
+        <ul class="green">
+            {{#each burgers}}
+            {{#unless devour}}
+            {{> burgers/burger-block devour=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
 
-</div>
+    <div class="column">
+        <img src="https://static01.nyt.com/images/2019/09/11/dining/09burner1/09burner1-superJumbo.jpg?quality=90&auto=webp"
+            alt="burger" height="350" width="570">
+    </div>
 
-<div class="right-content">
-    <h2>Burgers that are about to be devoured!</h2>
 
-    <ul class="red">
-        {{#each burgers}}
-        {{#if devour}}
-        {{> burgers/burger-block devour=false}}
-        {{/if}}
-        {{/each}}
-    </ul>
+    <div class="column">
+        <h2>Burgers that are about to be devoured!</h2>
+
+        <ul class="red">
+            {{#each burgers}}
+            {{#if devour}}
+            {{> burgers/burger-block devour=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
 </div>
