@@ -3,7 +3,7 @@ li {
     margin: 5px;
     background: #c68958;
   }
-  
+
   .label {
     font-weight: bold;
   }
@@ -49,4 +49,7 @@ li {
   .column {
     width: 100%;
   }
+}
+body {
+  background-color: navajowhite;
 }
